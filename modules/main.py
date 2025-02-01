@@ -146,24 +146,24 @@ async def start(client: Client, msg: Message):
     await asyncio.sleep(1)
     await start_message.edit_text(
         Data.START.format(msg.from_user.mention) +
-        "Checking status Ok... Send Command /saini **Bot Made BY 🅝🅘🅚🅗🅘🅛 🅢🅐🅘🅝🅘**🔍\n\n"
+        "Checking status Ok... Send Command /aman **Bot Made BY 🅰🅼🅰🅽 **🔍\n\n"
         "Progress:[🟩🟩🟩🟩🟩🟩🟩🟩🟩] 100%\n\n"
     )
 
 @bot.on_message(filters.command(["stop"]) )
 async def restart_handler(_, m):
-    await m.reply_text("🦅ˢᵗᵒᵖᵖᵉᵈ ᵇᵃᵇʸ💞", True)
+    await m.reply_text("Ruk gaya bhai👍", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["hacker"]) )
+@bot.on_message(filters.command(["aman"]) )
 async def txt_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"**🔹Hi I am Poweful TXT Downloader📥 Bot.**\n🔹**Send me the TXT file and wait.**")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
-    credit = f"🅝🅘🅚🅗🅘🅛 🅢🅐🅘🅝🅘"
+    credit = f"🅰🅼🅰🅽"
     token = f"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzYxNTE3MzAuMTI2LCJkYXRhIjp7Il9pZCI6IjYzMDRjMmY3Yzc5NjBlMDAxODAwNDQ4NyIsInVzZXJuYW1lIjoiNzc2MTAxNzc3MCIsImZpcnN0TmFtZSI6IkplZXYgbmFyYXlhbiIsImxhc3ROYW1lIjoic2FoIiwib3JnYW5pemF0aW9uIjp7Il9pZCI6IjVlYjM5M2VlOTVmYWI3NDY4YTc5ZDE4OSIsIndlYnNpdGUiOiJwaHlzaWNzd2FsbGFoLmNvbSIsIm5hbWUiOiJQaHlzaWNzd2FsbGFoIn0sImVtYWlsIjoiV1dXLkpFRVZOQVJBWUFOU0FIQEdNQUlMLkNPTSIsInJvbGVzIjpbIjViMjdiZDk2NTg0MmY5NTBhNzc4YzZlZiJdLCJjb3VudHJ5R3JvdXAiOiJJTiIsInR5cGUiOiJVU0VSIn0sImlhdCI6MTczNTU0NjkzMH0.iImf90mFu_cI-xINBv4t0jVz-rWK1zeXOIwIFvkrS0M"
     try:    
         with open(x, "r") as f:
@@ -217,14 +217,14 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your Name or send '1' for use default.\n Eg : NIKHIL SAINI**")
+    await editable.edit("**Enter Your Name or send '1' for use default.\n Eg : ᗅოꪖꫛ**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
     # Default credit message
-    credit = "️@Nikhil_saini_khe 🕊️⁪⁬⁮⁮⁮"
+    credit = "️🅰🅼🅰🅽⁪⁬⁮⁮⁮"
     if raw_text3 == '1':
-        CR = '@Nikhil_saini_khe 🕊️'
+        CR = '🅰🅼🅰🅽'
     elif raw_text3:
         CR = raw_text3
     else:
@@ -325,8 +325,8 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[🎞️] Video_ID : {str(count).zfill(3)}**\n\n**𝑽𝒊𝒅𝒆𝒐 𝑵𝒂𝒎𝒆** : {name1}🥀🅽🅸🅺🅷🅸🅻\n**𝑩𝒂𝒕𝒄𝒉 𝑵𝒂𝒎𝒆** : {b_name}\n\n**Extracted By : {CR}**'
-                cc1 = f'**[📁] File_ID : {str(count).zfill(3)}**\n\n**𝑭𝒊𝒍𝒆 𝑵𝒂𝒎𝒆** : {name1}🅢🅐🅘🅝🅘\n**𝑩𝒂𝒕𝒄𝒉 𝑵𝒂𝒎𝒆** : {b_name}\n\n**Extracted By : {CR}**'                             
+                cc = f'**[🎞️] Video_ID : {str(count).zfill(3)}**\n\n**𝑽𝒊𝒅𝒆𝒐 𝑵𝒂𝒎𝒆** : {name1} 🇮🇳ᗅოꪖꫛ\n**𝑩𝒂𝒕𝒄𝒉 𝑵𝒂𝒎𝒆** : {b_name}\n\n**Extracted By : {CR}**'
+                cc1 = f'**[📁] File_ID : {str(count).zfill(3)}**\n\n**𝑭𝒊𝒍𝒆 𝑵𝒂𝒎𝒆** : {name1}\n**𝑩𝒂𝒕𝒄𝒉 𝑵𝒂𝒎𝒆** : {b_name}\n\n**Extracted By : {CR}**'                             
                   
                 
                 if "drive" in url:
@@ -366,7 +366,7 @@ async def txt_handler(bot: Client, m: Message):
                         count += 1  # Increment count by 1
                
                 else:
-                    Show = f"🇩‌🇴‌🇼‌🇳‌🇱‌🇴‌🇦‌🇩‌🇮‌🇳‌🇬‌⟱ »\n\n📄 Title:- `{name}\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 🅽🅸🅺🅷🅸🅻 🆂🅰🅸🅽🅸"
+                    Show = f"🇩‌🇴‌🇼‌🇳‌🇱‌🇴‌🇦‌🇩‌🇮‌🇳‌🇬‌⟱ »\n\n📄 Title:- `{name}\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 🅰🅼🅰🅽"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -384,7 +384,7 @@ async def txt_handler(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("🦅Done Baby💞")
+    await m.reply_text("Completed Successfully ✅")
 
 
 
